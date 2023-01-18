@@ -46,9 +46,9 @@ fun MainInfo(title: String, name: String, modifier: Modifier = Modifier) {
     val image = painterResource(id = R.drawable.android_logo)
     Column(
         modifier = Modifier
-            .padding(top = 256.dp),
+            .fillMaxHeight(.5f),
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
+        verticalArrangement = Arrangement.Bottom
     ) {
         Image(painter = image, contentDescription = null, modifier.height(128.dp))
         Text(text = name, fontSize = 36.sp, color = Color.White)
